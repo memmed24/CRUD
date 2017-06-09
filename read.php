@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+b<!DOCTYPE html>
 <html>
 <head>
 	<title></title>
@@ -19,7 +19,7 @@
 <?php 
 	include "db.php";
 	$id = $_GET['id'];
-	$sql = "SELECT * FROM employee WHERE id='$id'";
+	$sql = "SELECT * FROM User WHERE id='$id'";
 	$query = mysqli_query($db_connection, $sql);
 	$row = mysqli_fetch_assoc($query); ?>
 		<div>

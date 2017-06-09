@@ -2,7 +2,7 @@
 include "db.php"; 
 if(isset($_GET['id'])){
 	$id = $_GET['id'];
-	$sql = "DELETE FROM employee WHERE id='$id'";
+	$sql = "DELETE FROM user WHERE id='$id'";
 	$query = mysqli_query($db_connection, $sql);
 
 	if($query){

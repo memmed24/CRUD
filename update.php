@@ -38,7 +38,7 @@
 
 			if(!empty($new_name)&&!empty($new_email)&&!empty($new_phone)){
 
-					$sql = "UPDATE employee SET name='$new_name', email='$new_email', phone='$new_phone' WHERE id='$id'";
+					$sql = "UPDATE User SET name='$new_name', email='$new_email', phone='$new_phone' WHERE id='$id'";
 					$query = mysqli_query($db_connection, $sql);
 					if ($query) {
 						header('Location: index.php');

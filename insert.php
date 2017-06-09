@@ -39,7 +39,7 @@ if (isset($_POST['submit'])) {
 	$number = $_POST['phone'];
 
 	if(!empty($name)&&!empty($surname)&&!empty($number)){
-		$sql = "INSERT INTO employee(name,email,phone) VALUES('$name', '$surname', '$number')";	
+		$sql = "INSERT INTO user(name,email,phone) VALUES('$name', '$surname', '$number')";	
 		$query = mysqli_query($db_connection, $sql);
 
 		if ($query) {
